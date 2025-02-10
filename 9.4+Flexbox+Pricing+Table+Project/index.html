@@ -11,6 +11,12 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
@@ -21,18 +27,33 @@
         }
       }
       .container{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        width: 1200px;
+        height: 350px;
+        grid-template-rows: 50px 300px;
+        /* background-color: #000; */
       }
+      /* .item{
+        background-color: wheat;
+      } */
       .pricing-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+      }
+      .submit-button-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .submit-button{
+        background-color: rgba(48, 123, 209, 0.616);
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        color: white; 
+        margin: 10px;
       }
       .pricing-plan{
         background-color: #f1f2f6;
@@ -66,23 +87,15 @@
         border-radius: 5px;
         color: white;
       }
-      .submit-button{
-        background-color: rgba(48, 123, 209, 0.616);
-        border-radius: 5px;
-        border: none;
-        padding: 10px;
-        color: white; 
-        margin: 10px;
-      }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="submit-button-section">
+      <div class="item submit-button-section">
         <button class="submit-button">Submit</button>
       </div>
-      <div class="pricing-container">
+      <div class="item pricing-container">
         <div class="pricing-plan">
           <div class="plan-title">Basic</div>
           <div class="plan-price">$9.99/month</div>
