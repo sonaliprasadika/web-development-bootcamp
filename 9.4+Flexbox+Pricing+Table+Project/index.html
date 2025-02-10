@@ -21,9 +21,18 @@
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .container{
+          display: grid;
+          height: 1200px;
+          grid-template-rows: 50px 2050px;
+          background-color: #000;
+          gap: 5px;
+        }
+        .item{
+          background-color: wheat;
+        }
         .container > .pricing-container {
           flex-direction: column;
-          height: 100%;
         }
       }
       .container{
