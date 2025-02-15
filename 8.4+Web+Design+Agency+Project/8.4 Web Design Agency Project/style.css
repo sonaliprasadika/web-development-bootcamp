@@ -19,44 +19,59 @@ footer {
   color: midnightblue;
 }
 
+.creative{
+  color: rgba(0, 0, 255, 0.575);
+}
+
+h1{
+  text-align: center;
+}
+
+.card{
+  width: 45%;
+  margin-bottom: 50px;
+}
+
 .tile-image{
   float: left;
-  height: 200px;
   margin-right: 50px;
-}
-.card {
-  width: 45%;
-}
-
-.left {
-  float: left;
-
+  height: 200px;
+  width: 300px;
 }
 
-.right {
+.project2{
   float: right;
 }
 
-.creative {
-  color: midnightblue;
+.project4{
+  float: right;
 }
 
-@media (max-width: 680px){
+.project1{
+  float: left;
+}
+
+.project3{
+  float: left;
+}
+
+@media (max-width:1200px){
   .logo{
     width: 100px;
   }
   h1{
     font-size: 3.5rem;
-    text-align: center;
   }
   .card{
     display: block;
-    margin-bottom: 30px;
     width: 100%;
+    text-align: justify;
   }
-  .tile-image{
-    margin-bottom: 10px;
+
+  .card .tile-image {
+    margin-bottom: 20px;
     width: 100%;
+    display: inline;
     object-fit: cover;
   }
 }
